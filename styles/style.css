@@ -317,14 +317,17 @@
 }
 
 .membership__steps {
+  display: flex;
+  flex-basis: auto;
   list-style-type: none;
   padding: 0;
   margin: 100px 0 0;
-  /* Add styles */
+  gap: 40px;
+  justify-content: space-evenly;
 }
 
 .step {
-  /* Add styles */
+  width: 220px;
 }
 
 .step__title {
