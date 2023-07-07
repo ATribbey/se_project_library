@@ -43,6 +43,10 @@
   font-weight: bold;
 }
 
+.nav__link:hover {
+  color: #1f69c9;
+}
+
 .header__title {
   font-size: 66px;
   line-height: 76px;
@@ -79,6 +83,10 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+}
+
+.header__link:hover {
+  color: #1f69c9;
 }
 
 .header__address {
@@ -154,6 +162,10 @@
 .events__more {
   color: #2f80ed;
   text-decoration: none;
+}
+
+.events__more:hover {
+  color: #1f69c9;
 }
 
 .events__cover {
@@ -323,7 +335,7 @@
   padding: 0;
   margin: 100px 0 0;
   gap: 40px;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .step {
@@ -354,21 +366,42 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  z-index: 0;
 }
 
 .about__title {
+  display: flex;
+  position: relative;
   margin: 0;
+  margin-right: 120px;
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
-  z-index: 1;
+  max-width: 154px;
+  z-index: 2;
 }
 
 .about__content {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  text-align: start;
+  margin-left: 274px;
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
+  z-index: 2;
+  top: -30px;
+}
+
+.about__paragraph {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.about__paragraph:nth-of-type(3n) {
+  margin-bottom: 0;
 }
 
 .about__circle {
@@ -376,22 +409,36 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  position: absolute;
+  top: -121px;
+  left: -91px;
+  z-index: 1;
 }
 
 .footer {
   box-sizing: border-box;
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 60px 102px 60px 80px;
 }
 
 .footer__columns {
+  display: flex;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .footer__column_content_hours {
+  margin-left: auto;
 }
 
 .footer__column_content_social {
+  margin-left: 100px;
 }
 
 .footer__logo {
+  width: 57px;
+  height: 80px;
 }
 
 .footer__list {
@@ -402,20 +449,33 @@
 }
 
 .footer__list-item {
+  padding-bottom: 16px;
+}
+
+.footer__list-item:last-child {
+  padding-bottom: 0;
 }
 
 .footer__column-heading {
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .footer__column-link {
   color: white;
-  font-size: 16px;
-  line-height: 20px;
   text-decoration: none;
 }
 
+.footer__column-link:hover {
+  color: #c1c1c1;
+}
+
 .footer__social-icon {
+  width: 16px;
+  height: 16px;
 }
 
 .footer__copyright {
+  margin-top: 100px;
 }
