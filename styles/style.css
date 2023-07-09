@@ -357,7 +357,6 @@
 
 .about {
   display: flex;
-  flex-direction: column;
   padding: 100px 80px;
   background-color: #1f1f1f;
   color: #fff;
@@ -389,7 +388,6 @@
   font-weight: 400;
   max-width: 660px;
   z-index: 2;
-  margin: auto;
 }
 
 .about__paragraph {
@@ -464,6 +462,7 @@
   align-items: center;
   color: white;
   text-decoration: none;
+  column-gap: 10px;
 }
 
 .footer__column-link:hover {
